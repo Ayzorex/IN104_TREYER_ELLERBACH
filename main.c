@@ -70,6 +70,7 @@ int main(int argc, char *argv[])
     }
     if (buffer == '3')
     {
+        printf("ATTENTION, si vous simulez avec des mots de plus de 7 lettres le temps d'éxécution sera très long !!!\n");
         printf("avec quelle taille de mot voules vous simuler ?\n");
         scanf("%s",buffer_N);
         unsigned int N = atoi(buffer_N);
@@ -81,7 +82,7 @@ int main(int argc, char *argv[])
         scanf(" %s",buffer_test);
         int number_test = atoi(buffer_test);
         get_data(fname,N,number_test,buffer_type);
-        printf("retrouvez les data de vos partie dans les fichier data_time.txt et data_turn.txt");
+        printf("retrouvez les data de vos partie dans les fichier data_time.txt et data_turn.txt\n");
     }
     if (buffer == '4')
     {
